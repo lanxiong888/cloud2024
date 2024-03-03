@@ -1,5 +1,6 @@
 package com.atguigu.cloud.controller;
 
+
 import cn.hutool.core.date.DateUtil;
 import com.atguigu.cloud.apis.PayFeignApi;
 import com.atguigu.cloud.entities.PayDTO;
@@ -19,7 +20,7 @@ public class OrderController{
         return resultData;
     }
     @GetMapping(value = "/feign/pay/get/{id}")
-    public ResultData getPayInfo(@PathVariable("id") Integer id){
+    public ResultData getById(@PathVariable("id") Integer id){
         System.out.println("payinfo操作");
 
         ResultData resultData = null;

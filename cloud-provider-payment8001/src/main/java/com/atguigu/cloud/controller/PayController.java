@@ -55,7 +55,7 @@ public class PayController {
         try {
             TimeUnit.SECONDS.sleep(62);
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
         Pay pay = payService.getById(id);
